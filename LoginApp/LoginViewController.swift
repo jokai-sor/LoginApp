@@ -28,11 +28,11 @@ class ViewController: UIViewController {
     }
     
     @IBAction func forgotPass() {
-        showAlert(title: "Remind", message: "Your password is \(password)")
+        showAlert(title: "Reminder", message: "Your password is \(password)")
     }
     
     @IBAction func forgotUser() {
-        showAlert(title: "Remind", message: "Your login is \(username)")
+        showAlert(title: "Reminder", message: "Your login is \(username)")
     }
     
     @IBAction func loginButton() {
