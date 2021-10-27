@@ -16,8 +16,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="LoginApp" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vXR-36-Kxk">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="LoginApp" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="vXR-36-Kxk">
                                 <rect key="frame" x="108" y="419.5" width="198" height="57"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="vXR-36-Kxk" secondAttribute="height" multiplier="66:19" id="I1K-xQ-YQk"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="48"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -27,7 +30,6 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="vXR-36-Kxk" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="4zK-jf-luz"/>
-                            <constraint firstItem="vXR-36-Kxk" firstAttribute="height" secondItem="Ze5-6b-2t3" secondAttribute="height" multiplier="0.0636161" id="Fzv-Vf-9I7"/>
                             <constraint firstItem="vXR-36-Kxk" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="vKK-3x-i9z"/>
                         </constraints>
                     </view>

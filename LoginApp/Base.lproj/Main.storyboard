@@ -16,16 +16,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t9T-Xh-0x1">
-                                <rect key="frame" x="20" y="510" width="146.5" height="32"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Forgot password?">
-                                    <fontDescription key="titleFontDescription" type="system" pointSize="15"/>
-                                </buttonConfiguration>
-                                <connections>
-                                    <action selector="forgotPass" destination="BYZ-38-t0r" eventType="touchUpInside" id="qqk-x4-Ueg"/>
-                                </connections>
-                            </button>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="18" translatesAutoresizingMaskIntoConstraints="NO" id="4Sz-WV-O3B">
                                 <rect key="frame" x="40" y="298" width="334" height="86"/>
                                 <subviews>
@@ -44,7 +34,7 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mJa-0P-TFQ">
                                 <rect key="frame" x="167.5" y="427.5" width="79" height="41.5"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Login">
+                                <buttonConfiguration key="configuration" style="plain" title="Login" cornerStyle="medium">
                                     <fontDescription key="titleFontDescription" type="system" pointSize="23"/>
                                 </buttonConfiguration>
                                 <connections>
@@ -53,29 +43,39 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VCa-Bn-iV9">
-                                <rect key="frame" x="245.5" y="510" width="148.5" height="32"/>
+                                <rect key="frame" x="267" y="480" width="126.5" height="28.5"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Forgot username?">
-                                    <fontDescription key="titleFontDescription" type="system" pointSize="15"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Forgot username?" cornerStyle="medium">
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="12"/>
                                 </buttonConfiguration>
                                 <connections>
                                     <action selector="forgotUser" destination="BYZ-38-t0r" eventType="touchUpInside" id="Wb8-q9-SgG"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t9T-Xh-0x1">
+                                <rect key="frame" x="20" y="480" width="125" height="28.5"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Forgot password?" cornerStyle="medium">
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="12"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="forgotPass" destination="BYZ-38-t0r" eventType="touchUpInside" id="qqk-x4-Ueg"/>
                                 </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="t9T-Xh-0x1" firstAttribute="top" secondItem="4Sz-WV-O3B" secondAttribute="bottom" constant="126" id="7Kg-Xi-gDu"/>
-                            <constraint firstItem="VCa-Bn-iV9" firstAttribute="top" secondItem="4Sz-WV-O3B" secondAttribute="bottom" constant="126" id="9Cx-Ig-8D8"/>
-                            <constraint firstItem="t9T-Xh-0x1" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="B5Q-dJ-iua"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" relation="lessThanOrEqual" secondItem="t9T-Xh-0x1" secondAttribute="trailing" constant="282" id="2S2-nG-v1l"/>
+                            <constraint firstItem="VCa-Bn-iV9" firstAttribute="top" secondItem="4Sz-WV-O3B" secondAttribute="bottom" constant="96" id="3O0-rP-jje"/>
+                            <constraint firstItem="VCa-Bn-iV9" firstAttribute="leading" relation="lessThanOrEqual" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="282" id="GV7-ZJ-Duk"/>
                             <constraint firstItem="4Sz-WV-O3B" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="40" id="JTd-IS-VQR"/>
                             <constraint firstItem="mJa-0P-TFQ" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Lf0-IO-eWQ"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" relation="lessThanOrEqual" secondItem="t9T-Xh-0x1" secondAttribute="trailing" constant="247.5" id="M71-kz-lZc"/>
-                            <constraint firstItem="VCa-Bn-iV9" firstAttribute="leading" relation="lessThanOrEqual" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="245.5" id="ZXn-VZ-mRa"/>
+                            <constraint firstItem="t9T-Xh-0x1" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="WV7-G2-ZSc"/>
+                            <constraint firstItem="t9T-Xh-0x1" firstAttribute="top" secondItem="4Sz-WV-O3B" secondAttribute="bottom" constant="96" id="fch-1f-U75"/>
                             <constraint firstItem="mJa-0P-TFQ" firstAttribute="top" secondItem="4Sz-WV-O3B" secondAttribute="bottom" constant="43.5" id="fp7-5D-bIz"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="VCa-Bn-iV9" secondAttribute="trailing" constant="20.5" id="lo5-wC-OuY"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="4Sz-WV-O3B" secondAttribute="trailing" constant="40" id="n5L-fT-gkE"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="VCa-Bn-iV9" secondAttribute="trailing" constant="20" id="nhl-IB-CjR"/>
                             <constraint firstItem="mJa-0P-TFQ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="rp5-jd-y0y"/>
                         </constraints>
                     </view>
@@ -105,10 +105,14 @@
                                 </buttonConfiguration>
                                 <connections>
                                     <action selector="logoutButtonPressed" destination="dN4-jq-j2Z" eventType="touchUpInside" id="Fd9-rY-HhL"/>
+                                    <segue destination="I3V-Wn-6q4" kind="unwind" unwindAction="unwindFor:" id="DfY-am-9UL"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dGA-DN-IlJ">
-                                <rect key="frame" x="171.5" y="214" width="71" height="36"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="dGA-DN-IlJ">
+                                <rect key="frame" x="40" y="214" width="334" height="36"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="dGA-DN-IlJ" secondAttribute="height" multiplier="167:18" id="aqP-i7-fgF"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -117,16 +121,20 @@
                         <viewLayoutGuide key="safeArea" id="uee-sq-wuP"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="dGA-DN-IlJ" firstAttribute="top" secondItem="uee-sq-wuP" secondAttribute="top" constant="170" id="TZm-ZI-rNx"/>
                             <constraint firstItem="HMm-ql-d4P" firstAttribute="centerY" secondItem="Fks-Xm-9Ac" secondAttribute="centerY" id="X4R-Nn-jn8"/>
-                            <constraint firstItem="dGA-DN-IlJ" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="uee-sq-wuP" secondAttribute="leading" constant="40" id="aET-kI-gio"/>
+                            <constraint firstItem="dGA-DN-IlJ" firstAttribute="leading" secondItem="uee-sq-wuP" secondAttribute="leading" constant="40" id="aET-kI-gio"/>
                             <constraint firstItem="uee-sq-wuP" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="dGA-DN-IlJ" secondAttribute="trailing" constant="40" id="ooW-Oz-MlU"/>
                             <constraint firstItem="HMm-ql-d4P" firstAttribute="centerX" secondItem="Fks-Xm-9Ac" secondAttribute="centerX" id="uIC-XP-JwY"/>
+                            <constraint firstItem="HMm-ql-d4P" firstAttribute="top" secondItem="dGA-DN-IlJ" secondAttribute="bottom" constant="177.5" id="x6p-U9-K5f"/>
                             <constraint firstItem="dGA-DN-IlJ" firstAttribute="centerX" secondItem="Fks-Xm-9Ac" secondAttribute="centerX" id="y9g-se-IyB"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="welcomLabel" destination="dGA-DN-IlJ" id="ZvJ-dj-pdI"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eVE-AJ-K8U" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="I3V-Wn-6q4" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="1469.5652173913045" y="109.82142857142857"/>
         </scene>
