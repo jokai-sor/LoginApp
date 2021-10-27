@@ -9,11 +9,38 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    
+    @IBOutlet var userTextField: UITextField!
+    @IBOutlet var passTextField: UITextField!
+    
+    let username = "User"
+    let password = "Pass"
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+
     }
 
+    
+    @IBAction func forgotPass() {
+        
+    }
+    
+    @IBAction func forgotUser() {
+        
+    }
+    
+    @IBAction func loginButton() {
+        
+    }
+    
 
+}
+
+extension ViewController {
+    
+    
+    
+//    print("Your username is \(username)")
 }
 

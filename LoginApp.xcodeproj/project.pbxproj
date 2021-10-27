@@ -13,6 +13,7 @@
 		C11F074727275E73004B1BC6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C11F074527275E73004B1BC6 /* Main.storyboard */; };
 		C11F074927275E74004B1BC6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C11F074827275E74004B1BC6 /* Assets.xcassets */; };
 		C11F074C27275E74004B1BC6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C11F074A27275E74004B1BC6 /* LaunchScreen.storyboard */; };
+		C15C303F272971B000CB91F0 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C15C303E272971B000CB91F0 /* WelcomeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		C11F074827275E74004B1BC6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C11F074B27275E74004B1BC6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C11F074D27275E74004B1BC6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C15C303E272971B000CB91F0 /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,9 +61,10 @@
 				C11F073F27275E73004B1BC6 /* AppDelegate.swift */,
 				C11F074127275E73004B1BC6 /* SceneDelegate.swift */,
 				C11F074327275E73004B1BC6 /* LoginViewController.swift */,
+				C15C303E272971B000CB91F0 /* WelcomeViewController.swift */,
 				C11F074527275E73004B1BC6 /* Main.storyboard */,
-				C11F074827275E74004B1BC6 /* Assets.xcassets */,
 				C11F074A27275E74004B1BC6 /* LaunchScreen.storyboard */,
+				C11F074827275E74004B1BC6 /* Assets.xcassets */,
 				C11F074D27275E74004B1BC6 /* Info.plist */,
 			);
 			path = LoginApp;
@@ -139,6 +142,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C11F074427275E73004B1BC6 /* LoginViewController.swift in Sources */,
+				C15C303F272971B000CB91F0 /* WelcomeViewController.swift in Sources */,
 				C11F074027275E73004B1BC6 /* AppDelegate.swift in Sources */,
 				C11F074227275E73004B1BC6 /* SceneDelegate.swift in Sources */,
 			);
