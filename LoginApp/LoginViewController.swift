@@ -52,6 +52,7 @@ class ViewController: UIViewController {
 //        guard let welcomeVC = segue.source as? WelcomeViewController else { return }
         userTextField.text = ""
         passTextField.text = ""
+        dismiss(animated: true)
     }
 }
 

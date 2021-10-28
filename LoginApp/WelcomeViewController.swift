@@ -19,9 +19,8 @@ class WelcomeViewController: UIViewController {
         welcomLabel.text = "Welcome, \(usernameWelcome ?? "DefaultUser")!"
     }
 
-    @IBAction func logoutButtonPressed() {
-        dismiss(animated: true)
-    }
-    
+//    @IBAction func logoutButtonPressed() {
+//        dismiss(animated: true)
+//    }
 
 }
